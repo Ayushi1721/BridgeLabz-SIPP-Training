@@ -1,0 +1,35 @@
+package Day4_Array;
+
+import java.util.Scanner;
+
+public class NumberAnalysis {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] numbers = new int[5];
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print("Enter number " + (i + 1) + ": ");
+            numbers[i] = sc.nextInt();
+        }
+
+        for (int number : numbers) {
+            if (number > 0) {
+                System.out.print(number + " is positive and ");
+                System.out.println((number % 2 == 0) ? "even." : "odd.");
+            } else if (number < 0) {
+                System.out.println(number + " is negative.");
+            } else {
+                System.out.println("Zero");
+            }
+        }
+
+        if (numbers[0] == numbers[4]) {
+            System.out.println("First and last elements are equal.");
+        } else if (numbers[0] > numbers[4]) {
+            System.out.println("First element is greater than the last.");
+        } else {
+            System.out.println("First element is less than the last.");
+        }
+    }
+}
+
