@@ -1,7 +1,6 @@
-package Day1_programs;
-
+package Day1_program;
 	import java.util.*;
-	public class ParkingLote {
+	public class ParkingLotGateSystem {
 	     public static void main(String[] args) {
 	    	 Scanner sc = new Scanner(System.in);
 	    	 int capacity = 5;

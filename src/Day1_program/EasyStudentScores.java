@@ -1,9 +1,8 @@
-package Day1_programs;
+package Day1_program;
 
-import java.util.*;
+	import java.util.Scanner;
 
-
-public class Studentscores {
+	public class EasyStudentScores {
 	    public static void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);
 
@@ -26,6 +25,8 @@ public class Studentscores {
 
 	        double average = sum / (double) n;
 	        int max = scores[0], min = scores[0];
+
+	        // Find max and min
 	        for (int i = 1; i < n; i++) {
 	            if (scores[i] > max) max = scores[i];
 	            if (scores[i] < min) min = scores[i];
